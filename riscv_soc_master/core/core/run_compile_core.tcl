@@ -34,7 +34,7 @@ link
 #ungroup -flatten -all
 
 ####### Design Specification ####
-source ./ss_0p9v_125c.tcl
+source ../../../flow_scripts/ss_0p9v_125c.tcl
 current_design $top
 
 ####### Compile and Optimize ####

@@ -1,4 +1,5 @@
 Information: Updating design information... (UID-85)
+Warning: Design 'riscv_core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
  
 ****************************************
 Report : timing
@@ -9,8 +10,10 @@ Report : timing
         -max_paths 1000
 Design : riscv_core
 Version: U-2022.12-SP6
-Date   : Mon Apr 14 15:59:55 2025
+Date   : Mon Apr 14 18:02:49 2025
 ****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
 
 Operating Conditions: ss0p72v125c   Library: saed14rvt_base_ss0p72v125c
 Wire Load Model Mode: top

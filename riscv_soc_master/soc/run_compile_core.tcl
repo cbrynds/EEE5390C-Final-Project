@@ -10,6 +10,7 @@ set link_library "/home/net/local/SAED14nm_EDK_08_2024/SAED14nm_EDK_STD_RVT/libe
 ####### Load Design and Elaborate #######
 #analyze -format verilog -autoread ../core/core/rv32imsu/ 
 analyze -format verilog { 
+	../core/core/results/riscv_core.v
 	./axi4_arb.v
 	./axi4lite_axi4_conv.v
 	./axi4_lite_tap.v
@@ -43,7 +44,7 @@ link
 #ungroup -flatten -all
 
 ####### Design Specification ####
-source ./ss_0p9v_125c.tcl
+source ../../flow_scripts/ss_0p9v_125c.tcl
 current_design $top
 
 ####### Compile and Optimize ####

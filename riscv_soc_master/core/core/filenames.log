@@ -89,7 +89,7 @@
 /home/net/synopsys/installs/syn/U-2022.12-SP6/auxx/gui/common/histogram/DialogNetCapacitance.tcl
 /home/net/synopsys/installs/syn/U-2022.12-SP6/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
 /home/net/synopsys/installs/syn/U-2022.12-SP6/auxx/gui/common/schematic/DialogPathSchematicAddPaths.tcl
-/home/net/ma148697/VLSI_design/FINAL/Project/flow_scripts/run_compile_core.tcl
+/home/net/ma148697/VLSI_design/FINAL/Project/riscv_soc_master/core/core/run_compile_core.tcl
 /home/net/ma148697/VLSI_design/FINAL/Project/riscv_soc_master/core/core/rv32imsu/riscv_defs.v
 /home/net/ma148697/VLSI_design/FINAL/Project/riscv_soc_master/core/core/rv32imsu/riscv_defs.v
 /home/net/ma148697/VLSI_design/FINAL/Project/riscv_soc_master/core/core/rv32imsu/riscv_defs.v
@@ -112,6 +112,7 @@
 /home/net/local/SAED14nm_EDK_08_2024/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p72v125c.db
 /home/net/synopsys/installs/syn/U-2022.12-SP6/libraries/syn/gtech.db
 /home/net/synopsys/installs/syn/U-2022.12-SP6/libraries/syn/standard.sldb
+/home/net/ma148697/VLSI_design/FINAL/Project/flow_scripts/ss_0p9v_125c.tcl
 /home/net/local/SAED14nm_EDK_08_2024/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p72v125c.db
 /home/net/local/SAED14nm_EDK_08_2024/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p72v125c.db
 /home/net/local/SAED14nm_EDK_08_2024/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p72v125c.db
