@@ -197,6 +197,8 @@ wire [ICACHE_TAG_CMP_ADDR_W-1:0] req_pc_tag_cmp_w = lookup_addr_q[`ICACHE_TAG_CM
 reg [ICACHE_TAG_REQ_LINE_W-1:0] tag_addr_r;
 
 // Tag RAM address
+reg [ICACHE_TAG_REQ_LINE_W-1:0] flush_addr_q;
+
 always @ *
 begin
     tag_addr_r = flush_addr_q;
@@ -376,8 +378,6 @@ u_data1
 //-----------------------------------------------------------------
 // Flush counter
 //-----------------------------------------------------------------
-reg [ICACHE_TAG_REQ_LINE_W-1:0] flush_addr_q;
-
 always @ (posedge clk_i or posedge rst_i)
 if (rst_i)
     flush_addr_q <= {(ICACHE_TAG_REQ_LINE_W){1'b0}};
