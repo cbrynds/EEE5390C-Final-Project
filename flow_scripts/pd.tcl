@@ -2,7 +2,7 @@
 ### Function: Performing Physical Design in 14nm Synopsys Technology
 
 set design_path "./results/"
-set design_name "riscv_core"
+set design_name "riscv_soc"
 
 global design_name
 global design_path
