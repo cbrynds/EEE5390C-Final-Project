@@ -1,5 +1,5 @@
 ####### Design Setup ########
-set module riscv_core 
+set module riscv_soc 
 set outDir "./results"
 define_design_lib work -path ./WORK
 
@@ -8,6 +8,8 @@ set target_library "/home/net/local/SAED14nm_EDK_08_2024/SAED14nm_EDK_STD_RVT/li
 set link_library "/home/net/local/SAED14nm_EDK_08_2024/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p72v125c.db" 
 
 ####### Load Design and Elaborate #######
+####### Update this portion to include the SoC RTL files ######
+####### Make sure that the synthesized design is riscv_soc ####
 #analyze -format verilog -autoread ../core/core/rv32imsu/ 
 analyze -format verilog { 
 ../core/rv32imsu/riscv_decode.v
