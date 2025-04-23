@@ -1,0 +1,123 @@
+ 
+****************************************
+Report : qor
+Design : riscv_soc
+Version: U-2022.12-SP6
+Date   : Wed Apr 23 11:56:21 2025
+****************************************
+
+
+  Timing Path Group 'FEEDTHROUGH'
+  -----------------------------------
+  Levels of Logic:              27.00
+  Critical Path Length:          3.08
+  Critical Path Slack:           2.38
+  Critical Path Clk Period:      7.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:              34.00
+  Critical Path Length:          4.26
+  Critical Path Slack:           1.86
+  Critical Path Clk Period:      7.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:              37.00
+  Critical Path Length:          5.04
+  Critical Path Slack:           1.12
+  Critical Path Clk Period:      7.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'reg2reg'
+  -----------------------------------
+  Levels of Logic:              82.00
+  Critical Path Length:          6.84
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      7.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         69
+  Hierarchical Port Count:      12676
+  Leaf Cell Count:             690681
+  Buf/Inv Cell Count:          154468
+  Buf Cell Count:              148567
+  Inv Cell Count:                5938
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:    545202
+  Sequential Cell Count:       145479
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   163176.531015
+  Noncombinational Area:
+                        136092.791644
+  Buf/Inv Area:          42524.678577
+  Total Buffer Area:         41428.62
+  Total Inverter Area:        1147.56
+  Macro/Black Box Area:      0.000000
+  Net Area:            1033889.775009
+  -----------------------------------
+  Cell Area:            299269.322659
+  Design Area:         1333159.097668
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:        693922
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: net1580
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                  407.25
+  Logic Optimization:                647.69
+  Mapping Optimization:             3916.12
+  -----------------------------------------
+  Overall Compile Time:             5221.22
+  Overall Compile Wall Clock Time:  5290.42
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
