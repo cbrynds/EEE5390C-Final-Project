@@ -1,5 +1,6 @@
 set corner {ss0p72v125c}
-set period 7.0
+# Changed From 7.0 to 9.0
+set period 7
 create_clock -name clk [get_ports clk_i] -period ${period}
 set_false_path -from [get_ports rst_i]
 set_driving_cell -lib_cell SAEDRVT14_INV_16 [ all_inputs ]
@@ -10,5 +11,6 @@ group_path -name REG2REG     -from [all_registers]   -to   [all_registers]
 group_path -name REGIN       -from [all_inputs]
 group_path -name FEEDTHROUGH -from [remove_from_collection [all_inputs] [get_ports {clk_i}]] -to [all_outputs]
 set_clock_uncertainty -setup [expr ${period}*(0.02)] [get_clocks clk]
-set_clock_uncertainty -hold [expr ${period}*(0.01)] [get_clocks clk]
+# Uncertainty changed from 0.01 to 0.005
+set_clock_uncertainty -hold [expr ${period}*(0.005)] [get_clocks clk]
 set_max_fanout 32 [current_design]

@@ -1,5 +1,5 @@
 ####### Design Setup ########
-set module riscv_top 
+set module riscv_soc 
 set outDir "./results"
 define_design_lib work -path ./WORK
 
@@ -10,7 +10,19 @@ set link_library "/home/net/local/SAED14nm_EDK_08_2024/SAED14nm_EDK_STD_RVT/libe
 ####### Load Design and Elaborate #######
 #analyze -format verilog -autoread ../core/core/rv32imsu/ 
 analyze -format verilog { 
-	../core/core/results/riscv_core.v
+	../core/core/rv32imsu/riscv_alu.v
+	../core/core/rv32imsu/riscv_core.v
+	../core/core/rv32imsu/riscv_csr.v
+	../core/core/rv32imsu/riscv_decode.v
+	../core/core/rv32imsu/riscv_defs.v
+	../core/core/rv32imsu/riscv_exec.v
+	../core/core/rv32imsu/riscv_fetch.v
+	../core/core/rv32imsu/riscv_lsu.v
+	../core/core/rv32imsu/riscv_lsu.v
+	../core/core/rv32imsu/riscv_mmu_arb.v
+	../core/core/rv32imsu/riscv_mmu.v
+	../core/core/rv32imsu/riscv_muldiv.v
+	../core/core/rv32imsu/riscv_regfile.v
 	./axi4_arb.v
 	./axi4lite_axi4_conv.v
 	./axi4_lite_tap.v
