@@ -123,6 +123,7 @@ current_scenario func@ss0p72v125c.setup
 set_app_options -name place.coarse.continue_on_missing_scandef -value true
 place_opt
 save_block -as placeopt
+# open_block riscv_soc:placeopt.design
 report_congestion
 report_utilization
 
@@ -133,19 +134,20 @@ report_clock_settings
 synthesize_clock_tree -cts_only
 report_clock_qor
 synthesize_clock_tree -cto_only ;# Balance Tree
-report_clock_qor
-compute_clock_latency
-update_timing -force -full
-route_group -all_clock_nets -reuse_existing_global_route true -max_detail_route_iterations 10
-synthesize_clock_trees -postroute -routed_clock_stage detail
-report_clock_qor
-save_block -as cts 
-clock_opt -from build_clock -to route_clock
-clock_opt -from final_opto
-route_group -all_clock_nets
-save_block -as clockopt 
-report_clock_timing -type summary
-report_clock_qor
+save_block -as basic_clock
+# report_clock_qor
+# compute_clock_latency
+# update_timing -force -full
+# route_group -all_clock_nets -reuse_existing_global_route true -max_detail_route_iterations 10
+# synthesize_clock_trees -postroute -routed_clock_stage detail
+# report_clock_qor
+# save_block -as cts 
+# clock_opt -from build_clock -to route_clock
+# clock_opt -from final_opto
+# route_group -all_clock_nets
+# save_block -as clockopt 
+# report_clock_timing -type summary
+# report_clock_qor
 
 ## Routing ##
 route_opt

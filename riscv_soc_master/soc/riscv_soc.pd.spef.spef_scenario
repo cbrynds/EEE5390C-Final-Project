@@ -1,0 +1,9 @@
+./riscv_soc.pd.spef.Cmax_125.spef for scenarios: 
+	 scenario: func@ss0p72v125c.setup, corner type: late/early
+
+./riscv_soc.pd.spef.Cmin_-40.spef for scenarios: 
+	 scenario: func@ff0p88vm40c.hold, corner type: late/early
+
+./riscv_soc.pd.spef.nominal_25.spef for scenarios: 
+	 scenario: func@tt0p8v25c.leak, corner type: late/early
+

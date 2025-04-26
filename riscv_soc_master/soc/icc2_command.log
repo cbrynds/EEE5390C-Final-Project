@@ -1,0 +1,16 @@
+#@ # 
+#@ # Running icc2_shell Version V-2023.12-SP5 for linux64 -- Aug 01, 2024
+#@ # Date:   Fri Apr 25 11:03:37 2025
+#@ # Run by: ma148697@net1582.net.ucf.edu
+#@ 
+
+source pd.tcl
+report_qor
+report_qor > epic_qor.rpt
+save_block -as routeopt
+set design_name riscv_soc
+write_verilog "./results/${design_name}.pd.v"
+write_parasitics -output "./${design_name}.pd.spef"
+write_sdc -output "./results/${design_name}.pd.sdc"
+write_def "./results/${design_name}.pd.def"
+write_gds "./results/${design_name}.pd.gds" -hierarchy all -merge_gds_top_cell $design_name
