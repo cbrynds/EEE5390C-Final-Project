@@ -1,0 +1,223 @@
+Using libraries: riscv_soc saed14rvt_base_ss0p72v125c saed14rvt_base_c_physical_only EXPLORE_physical_only
+Visiting block riscv_soc:routeopt.design
+Design 'riscv_soc' was successfully linked.
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MRDL
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Warning: Cannot find a default contact code for layer VIA0. (ZRT-022)
+Warning: Port VDD of cell routeopt is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Port VSS of cell routeopt is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 default pitch 0.100 may be too small to handle up/down via. Note, that minimum requirements are "wire/via-down 0.100" & "wire/via-up 0.120". (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 default pitch 0.100 may be too small to handle up/down via. Note, that minimum requirements are "wire/via-down 0.100" & "wire/via-up 1.570". (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL default pitch 4.000 may be too small to handle up/down via. Note, that minimum requirements are "wire/via-down 4.500" & "wire/via-up 4.000". (ZRT-026)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 1.35 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 1.35 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+Warning: Standard cell pin SAEDRVT14_ND2_MM_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ND2_MM_2/A2 has no valid via regions. (ZRT-044)
+
+
+Start checking for open nets ... 
+
+Total number of nets = 562736, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 562736 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used 1239  Alloctr 1247  Proc 11597 
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+detail.timing_driven                                    :	 false               
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked	24/1089 Partitions, Violations =	79
+Checked	43/1089 Partitions, Violations =	1086
+Checked	86/1089 Partitions, Violations =	2937
+Checked	129/1089 Partitions, Violations =	5012
+Checked	172/1089 Partitions, Violations =	7168
+Checked	215/1089 Partitions, Violations =	9097
+Checked	258/1089 Partitions, Violations =	11165
+Checked	301/1089 Partitions, Violations =	13426
+Checked	344/1089 Partitions, Violations =	14323
+Checked	387/1089 Partitions, Violations =	15827
+Checked	430/1089 Partitions, Violations =	17739
+Checked	473/1089 Partitions, Violations =	19428
+Checked	516/1089 Partitions, Violations =	20975
+Checked	559/1089 Partitions, Violations =	23453
+Checked	602/1089 Partitions, Violations =	24870
+Checked	645/1089 Partitions, Violations =	26502
+Checked	688/1089 Partitions, Violations =	28230
+Checked	731/1089 Partitions, Violations =	30146
+Checked	774/1089 Partitions, Violations =	31796
+Checked	817/1089 Partitions, Violations =	33580
+Checked	860/1089 Partitions, Violations =	35241
+Checked	903/1089 Partitions, Violations =	37167
+Checked	946/1089 Partitions, Violations =	39120
+Checked	989/1089 Partitions, Violations =	40792
+Checked	1032/1089 Partitions, Violations =	42577
+Checked	1075/1089 Partitions, Violations =	44552
+[DRC CHECK] Elapsed real time: 0:09:41 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:16 usr=0:09:39 total=0:09:55
+[DRC CHECK] Stage (MB): Used   11  Alloctr   15  Proc  159 
+[DRC CHECK] Total (MB): Used 1427  Alloctr 1439  Proc 11795 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+Information: Merged away 1034 aligned/redundant DRCs. (ZRT-305)
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	43952
+	Diff net spacing : 3440
+	Diff net via-cut spacing : 8786
+	Edge-line via spacing : 3
+	End of line enclosure : 1246
+	Less than minimum area : 66
+	Less than minimum edge length : 1
+	Less than minimum width : 44
+	Non-preferred direction route : 6
+	Off-grid : 15765
+	Same net spacing : 11
+	Same net via-cut spacing : 445
+	Short : 14139
+
+
+Total Wire Length =                    4797049 micron
+Total Number of Contacts =             4401939
+Total Number of Wires =                4879911
+Total Number of PtConns =              710802
+Total Number of Routed Wires =       4878112
+Total Routed Wire Length =           4751127 micron
+Total Number of Routed Contacts =       4401939
+	Layer             M1 :     110411 micron
+	Layer             M2 :    1016212 micron
+	Layer             M3 :    1279127 micron
+	Layer             M4 :     900210 micron
+	Layer             M5 :     897882 micron
+	Layer             M6 :     430480 micron
+	Layer             M7 :      97465 micron
+	Layer             M8 :      18333 micron
+	Layer             M9 :       1006 micron
+	Layer           MRDL :          0 micron
+	Via       VIA89_Base :         61
+	Via          VIA78SQ :        775
+	Via        VIA67SQ_C :       4437
+	Via         VIA5SQ_C :      14458
+	Via    VIA5SQ_C(rot) :      31957
+	Via           VIA4SQ :     173878
+	Via        VIA34SQ_C :     415489
+	Via          VIA34SQ :         39
+	Via        VIA3_34SQ :      29128
+	Via   VIA3_34SQ(rot) :        167
+	Via        VIA2_Base :    1971167
+	Via   VIA23SQ_C(rot) :         79
+	Via          VIA23SQ :          2
+	Via        VIA12SQ_C :       3518
+	Via   VIA12SQ_C(rot) :        762
+	Via        VIA1_Base :    1755886
+	Via      VIA12BAR1_C :          2
+	Via          VIA12SQ :         26
+	Via     VIA12SQ(rot) :         80
+	Via      VIA1_32SQ_C :         28
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 4401939 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 1760302 vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1760302 vias)
+    Layer VIA2       =  0.00% (0      / 1971248 vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1971248 vias)
+    Layer VIA3       =  0.00% (0      / 444823  vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (444823  vias)
+    Layer VIA4       =  0.00% (0      / 173878  vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (173878  vias)
+    Layer VIA5       =  0.00% (0      / 46415   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (46415   vias)
+    Layer VIA6       =  0.00% (0      / 4437    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4437    vias)
+    Layer VIA7       =  0.00% (0      / 775     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (775     vias)
+    Layer VIA8       =  0.00% (0      / 61      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (61      vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 4401939 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 1760302 vias)
+    Layer VIA2       =  0.00% (0      / 1971248 vias)
+    Layer VIA3       =  0.00% (0      / 444823  vias)
+    Layer VIA4       =  0.00% (0      / 173878  vias)
+    Layer VIA5       =  0.00% (0      / 46415   vias)
+    Layer VIA6       =  0.00% (0      / 4437    vias)
+    Layer VIA7       =  0.00% (0      / 775     vias)
+    Layer VIA8       =  0.00% (0      / 61      vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 4401939 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 1760302 vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1760302 vias)
+    Layer VIA2       =  0.00% (0      / 1971248 vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1971248 vias)
+    Layer VIA3       =  0.00% (0      / 444823  vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (444823  vias)
+    Layer VIA4       =  0.00% (0      / 173878  vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (173878  vias)
+    Layer VIA5       =  0.00% (0      / 46415   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (46415   vias)
+    Layer VIA6       =  0.00% (0      / 4437    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4437    vias)
+    Layer VIA7       =  0.00% (0      / 775     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (775     vias)
+    Layer VIA8       =  0.00% (0      / 61      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (61      vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 562736, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 43952
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+
